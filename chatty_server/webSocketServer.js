@@ -21,12 +21,13 @@ const wss = new SocketServer({ server });
 // When a client connects they are assigned a socket, represented by
 // the ws parameter in the callback.
 let messageLog = [
-    {
+    { type: "message",
       username: "Bob",
       content: "Has anyone seen my marbles?",
       id: uuidv1(),
     },
     {
+      type: "message",
       username: "Anonymous",
       content: "No, I think you lost them. You lost your marbles Bob. You lost them for good.",
       id: uuidv1(),

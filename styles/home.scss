@@ -72,7 +72,8 @@ body {
 }
 
 .message-content,
-.message-username {
+.message-username,
+.notification-content {
   overflow: hidden;
   margin: 5px;
   padding: 0 10px;

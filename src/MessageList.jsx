@@ -2,11 +2,7 @@ import React, { Component } from 'react';
 import Message from './Message.jsx';
 
 class MessageList extends Component {
-    // constructor(props){
-    //     super(props);
-    //   console.log('hit', props)
-        
-    // }
+    
 
     
     
@@ -19,7 +15,10 @@ class MessageList extends Component {
                 <div>
     
                     {this.props.messages.map(message => {
-         return (<Message key={message.id} userName={message.username} message={message.content} />)
+                        if(message.type === 'notification') {
+                            console.log('hit');
+                        }
+        return (<Message key={message.id} userName={message.username} message={message.content} type={message.type}/>)
        }) } 
                     </div>
         

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ChatBar from './ChatBar.jsx';
 import MessageList from './MessageList.jsx';
 // const WebSocket = require('ws')
-let currentUsers = { name: "Bob" };
+let currentUsers = { name: "Anonymous" };
 let messages = [
   {
     username: "Bob",
@@ -72,10 +72,15 @@ class App extends Component {
   }
 
   addUser = (input) => {
-    
-    return this.setState({currentUsers: input});
+    const notification =  {
+      type: "notification",
+      content: `${this.state.currentUsers.name} has changed there name to ${input.name}`
+    }
+    this.socket.send(JSON.stringify(notification));
+    this.setState({currentUsers: input});
+    console.log(notification);
   
-  
+    return this.state.currentUsers;
    
   
   }
@@ -85,8 +90,8 @@ class App extends Component {
   }
 
   addMessage = (input) => {
-    // const messages = this.state.messages;
     const newMess = {
+      type: "message",
       username: this.state.currentUsers.name,
       content: input,
     };
