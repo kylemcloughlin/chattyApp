@@ -6,7 +6,7 @@ Chatty App is a full stack web application that allows users to communicate with
 Final Product
 =====================
 ![`Screenshot of name change`](https://github.com/kylemcloughlin/chattyApp/blob/5a85807ec0209da9fbab68ef18aba89a5542b81e/docs/changeName.png?raw=true?raw=true)
-![`Screenshot of conversation`](?raw=true)
+![`Screenshot of conversation`](https://github.com/kylemcloughlin/chattyApp/blob/5a85807ec0209da9fbab68ef18aba89a5542b81e/docs/convo.png?raw=true?raw=true)
 
 Get Started
 =====================
