@@ -2,10 +2,6 @@ Chatty App
 =====================
 A client-side SPA (single-page app) built with ReactJS, Webpack, Babel, Node.js and Web Sockets. The client-side app communicates with a server via WebSockets for multi-user real-time updates. No persistent database is involved; the focus is on the client-side experience
 
-###Usage
-
-Usage Clone the repo to your local machine. Install the dependencies and start the server.
-
 Final Product
 =====================
 ![`Screenshot of name change`](https://github.com/kylemcloughlin/chattyApp/blob/5a85807ec0209da9fbab68ef18aba89a5542b81e/docs/changeName.png?raw=true?raw=true)
