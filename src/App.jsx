@@ -88,7 +88,7 @@ class App extends Component {
     this.sendMessageWS(newMess);
 
 
-    
+
   };
 
 
