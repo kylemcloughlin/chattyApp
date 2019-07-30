@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/noahlotzer/react-simple-boilerplate",
   "engines": {
-    "node": ">=11.12.0"
+    "node": "11.12.0"
   },
   "devDependencies": {
     "babel-core": "6.23.1",
