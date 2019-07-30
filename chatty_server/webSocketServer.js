@@ -5,7 +5,7 @@ const SocketServer = require('ws').Server;
 const uuidv1 = require('uuid/v1');
 
 // Set the port to 3001
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 // Create a new express server
 const server = express()
