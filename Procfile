@@ -1,1 +1,2 @@
-web: node chatty_server/WebSocketServer.js && npm start
+web: node chatty_server/WebSocketServer.js
+web: npm start
