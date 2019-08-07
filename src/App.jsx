@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ChatBar from './ChatBar.jsx';
 import MessageList from './MessageList.jsx';
-
+// import PORT from '..chatty_server/WebSocketServer'
 let currentUsers = { name: "Anonymous" };
 let messages = [];
 
@@ -25,7 +25,7 @@ class App extends Component {
 
 
   componentDidMount() {
-
+// console.log(PORT)
 
     loadingTimer().then(messages => {
       this.setState({
